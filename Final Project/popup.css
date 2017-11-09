@@ -1,0 +1,37 @@
+body {
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      background: gray;
+      font-family: sans-serif;
+    }
+    
+    header {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    div:first-child {
+      margin-top: 0px;
+    }
+    
+    div {
+      padding: 1px 3px;
+      font-family: sans-serif;
+      font-size: 0.8em;
+      width: 200px;
+      margin-top: 1px;
+      background:#cccccc;
+    }
+
+    div:color {
+      cursor: pointer;
+      text-align: center;
+    }
+    div:hover {
+      background: #aaaaaa;
+    }
+    
+    #randomText {
+      margin-bottom: 5px;
+    }
