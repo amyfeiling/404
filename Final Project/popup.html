@@ -1,86 +1,49 @@
 <html><head>
     <title>Set Page Color Popup</title>
-    <style>
-    body {
-      overflow: hidden;
-      margin: 0px;
-      padding: 0px;
-      background: gray;
-      font-family: sans-serif;
-    }
+    <link rel="stylesheet" type="text/css" href="popup_new.css">
     
-    header {
-    	font-size: 3em;
-    	font-weight: bold;
-    }
-
-    div:first-child {
-      margin-top: 0px;
-    }
-    
-    div {
-    	padding: 1px 3px;
-    	font-family: sans-serif;
-    	font-size: 0.8em;
-    	width: 200px;
-    	margin-top: 1px;
-    	background:#cccccc;
-    }
-
-    div:color {
-      cursor: pointer;
-      text-align: center;
-    }
-    div:hover {
-      background: #aaaaaa;
-    }
-    #red {
-      border: 1px solid red;
-      color: red;
-    }
-    #blue {
-      border: 1px solid blue;
-      color: blue;
-    }
-    #green {
-      border: 1px solid green;
-      color: green;
-    }
-    #yellow {
-      border: 1px solid yellow;
-      color: yellow;
-    }
-    
-    #randomText {
-    	margin-bottom: 5px;
-    }
-    </style>
-    <script src="popup.js"></script>
   </head>
   <body>
   	<section>
   		<header>AAA</header>
   	
-  		<article id="randomText">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+  		<article id="randomText">Nemo enim <a href="">ipsam</a> voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
   			eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet, 
   			consectetur, adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore 
   			magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem</article>
   	</section>
-  	<section>
+    <section>
   			Background
-  			<select id="bgcolorSelector" name="bgcolorSelector" class="color">
-				<option id="red" value="red">red</option>
-				<option id="blue">blue</option>
-				<option id="green">green</option>
-				<option>yellow</option>
+  			<select id="bgcolorSelector" name="bgcolorSelector">
+				<option value="red">red</option>
+				<option value="blue">blue</option>
+				<option value="green">green</option>
+				<option value="yellow">yellow</option>
 			</select>
-	</section>
+    <p />
+      Foreground
+        <select id="fgcolorSelector" name="fgcolorSelector">
+        <option value="black">black</option>
+        <option value="white">white</option>
+        <option value="gray">gray</option>
+      </select>
+    <p />
+      Link
+        <select id="linkSelector" name="linkSelector">
+        <option value="black">black</option>
+        <option value="white">white</option>
+        <option value="gray">gray</option>
+      </select>
+    <p />
+    <button id="changeStyles" name="changeStyles">Change Styles</button>
+	 </section>
 
-    <div class="color" id="red">red</div>
+    <!--<div id="red">red</div>
     <div id="blue">blue</div>
     <div id="green">green</div>
-    <div id="yellow">yellow</div>
-	<div id="result"></div>
+    <div id="yellow">yellow</div>-->
+	
+    <div id="result"></div>
   
-
+<script src="popup.js"></script>
 </body></html>
