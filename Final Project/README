@@ -1,0 +1,38 @@
+# Color Selector Browser Extension
+
+This browser extension is for changing the background and foreground colors of web pages. It only changes background and foreground colors of web pages that don't have specific CSS already defined by name or id tags. The idea behind this browser extension is to be a guide for anyone who wants to change color choices of a web page. 
+
+
+### Prerequisites
+
+You will need to have Chrome and Firefox already installed on your computer.
+
+
+### Installing
+
+Clone this responsitory to your local machine.
+
+For Chrome:
+1. Click on the vertical eplisce
+2. More Tools
+3. Extensions
+4. Load unpacked extensions
+5. Browse to where you saved this project
+6. Click on the folder Final Project
+
+
+For Firefox:
+1. In the address bar type "about:debugging"
+2. Click Load Temporary Add-on
+3. Browse to where you saved this project
+4. Click on the manifest.json file
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* For the color image on the dropdown menus, I used the following code: http://www.marghoobsuleman.com/jquery-image-dropdown
+

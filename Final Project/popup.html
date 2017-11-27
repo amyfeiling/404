@@ -1,7 +1,18 @@
 <html><head>
     <title>Set Page Color Popup</title>
-    <link rel="stylesheet" type="text/css" href="popup_new.css">
     
+    
+    <script src="jquery-1.9.0.min.js"></script>
+    
+
+    
+    <script src="jquery.dd.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="dd.css" />
+    <link rel="stylesheet" type="text/css" href="colors.css" />
+    <link rel="stylesheet" type="text/css" href="popup.css">
+
+
   </head>
   <body>
   	<section>
@@ -12,38 +23,61 @@
   			consectetur, adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore 
   			magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem</article>
   	</section>
-    <section>
+    <p/>
+    <section >
   			Background
-  			<select id="bgcolorSelector" name="bgcolorSelector">
-				<option value="red">red</option>
-				<option value="blue">blue</option>
-				<option value="green">green</option>
-				<option value="yellow">yellow</option>
+  			<select id="bgcolorSelector" name="bgcolorSelector" style="width:150px;">
+        <option value="Black" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color black" data-title="Black">Black</option>">
+        <option value="blue" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color blue" data-title="Blue">Blue</option>
+        <option value="brown" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color brown" data-title="Brown">Brown</option>
+        <option value="cyan" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color cyan" data-title="Cyan">Cyan</option>
+        <option value="green" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color green" data-title="Green">Green</option>
+        <option value="magenta" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color magenta" data-title="Magenta">Magenta</option>
+        <option value="orange" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color orange" data-title="Orange">Orange</option>
+        <option value="purple" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color purple" data-title="Purple">Purple</option>
+				<option value="red" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color red" data-title="Red">Red</option>
+				<option value="yellow" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color yellow" data-title="Yellow">Yellow</option>
+        <option value="white" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color white" data-title="White">White</option>
 			</select>
+
     <p />
       Foreground
-        <select id="fgcolorSelector" name="fgcolorSelector">
-        <option value="black">black</option>
-        <option value="white">white</option>
-        <option value="gray">gray</option>
+        <select id="fgcolorSelector" name="fgcolorSelector" style="width:150px;">
+        <option value="Black" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color black" data-title="Black">Black</option>">
+        <option value="blue" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color blue" data-title="Blue">Blue</option>
+        <option value="brown" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color brown" data-title="Brown">Brown</option>
+        <option value="cyan" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color cyan" data-title="Cyan">Cyan</option>
+        <option value="green" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color green" data-title="Green">Green</option>
+        <option value="magenta" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color magenta" data-title="Magenta">Magenta</option>
+        <option value="orange" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color orange" data-title="Orange">Orange</option>
+        <option value="purple" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color purple" data-title="Purple">Purple</option>
+        <option value="red" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color red" data-title="Red">Red</option>
+        <option value="yellow" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color yellow" data-title="Yellow">Yellow</option>
+        <option value="white" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color white" data-title="White">White</option>
       </select>
     <p />
       Link
-        <select id="linkSelector" name="linkSelector">
-        <option value="black">black</option>
-        <option value="white">white</option>
-        <option value="gray">gray</option>
+        <select id="linkSelector" name="linkSelector" style="width:150px;">
+        <option value="Black" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color black" data-title="Black">Black</option>">
+        <option value="blue" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color blue" data-title="Blue">Blue</option>
+        <option value="brown" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color brown" data-title="Brown">Brown</option>
+        <option value="cyan" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color cyan" data-title="Cyan">Cyan</option>
+        <option value="green" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color green" data-title="Green">Green</option>
+        <option value="magenta" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color magenta" data-title="Magenta">Magenta</option>
+        <option value="orange" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color orange" data-title="Orange">Orange</option>
+        <option value="purple" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color purple" data-title="Purple">Purple</option>
+        <option value="red" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color red" data-title="Red">Red</option>
+        <option value="yellow" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color yellow" data-title="Yellow">Yellow</option>
+        <option value="white" data-image="ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="color white" data-title="White">White</option>
       </select>
     <p />
-    <button id="changeStyles" name="changeStyles">Change Styles</button>
-	 </section>
 
-    <!--<div id="red">red</div>
-    <div id="blue">blue</div>
-    <div id="green">green</div>
-    <div id="yellow">yellow</div>-->
+    <!--<button id="changeStyles" name="changeStyles">Change Styles</button>-->
+	 </section>
 	
     <div id="result"></div>
   
 <script src="popup.js"></script>
+<script src="msDropDown.js"></script>
+
 </body></html>

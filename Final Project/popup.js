@@ -1,4 +1,3 @@
-
 /*function click(e, color) {
 
   //chrome.tabs.executeScript(null,
@@ -12,8 +11,8 @@
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-	var color = document.getElementById('#bgcolorSelector').value;
-	//document.getElementById('result').innerHTML = color;
+  var color = document.getElementById('#bgcolorSelector').value;
+  //document.getElementById('result').innerHTML = color;
    //document.querySelector("#result").innerHTML = color;
   document.querySelector('#bgcolorSelector option:checked').addEventListener('change', click);
   //document.querySelector('#bgcolorSelector').addEventListener("change", click);      
@@ -88,6 +87,8 @@ function linkChangeEventHandler(event) {
     var anchors = container.getElementsByTagName('a');
     for (var i = 0; i<anchors.length; i++){
         anchors[i].style.color = event.target.value;
+
+        chrome.tabs.executeScript(null,
+        {code:"document.body.style.color='" + event.target.value + "'"});
     }
 }
-

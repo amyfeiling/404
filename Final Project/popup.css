@@ -4,6 +4,7 @@ body {
       padding: 0px;
       background: gray;
       font-family: sans-serif;
+      width: 300px;
     }
     
     header {
@@ -11,23 +12,7 @@ body {
       font-weight: bold;
     }
 
-    div:first-child {
-      margin-top: 0px;
-    }
     
-    div {
-      padding: 1px 3px;
-      font-family: sans-serif;
-      font-size: 0.8em;
-      width: 200px;
-      margin-top: 1px;
-      background:#cccccc;
-    }
-
-    div:color {
-      cursor: pointer;
-      text-align: center;
-    }
     div:hover {
       background: #aaaaaa;
     }
@@ -35,3 +20,20 @@ body {
     #randomText {
       margin-bottom: 5px;
     }
+
+    select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+select option[value="gray"] { /* value not val */
+    color: gray;
+}
+
+select option[value="blue"] { /* value not val */
+    background: blue;
+}
+
+
