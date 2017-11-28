@@ -1,5 +1,5 @@
 {
-  "name": "A browser action with a popup that changes the background and foreground color",
+  "name": "Changes the background and foreground color",
   "description": "Change the current page formatting colors",
   "version": "0.1",
   "permissions": [
